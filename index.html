@@ -1,1 +1,19 @@
+<head>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
 
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("geometric-optics.swf");
+    });
+    //console.log("test");
+</script>
+<script src="ruffle.js"></script>
+</head>
+<body>
+    <div id="container" sytle="width:100%;"></div>
+  <p>(Simulation originally a part of <a href="https://phet.colorado.edu/">PHET Simulations</a>)</p>
+</body>
